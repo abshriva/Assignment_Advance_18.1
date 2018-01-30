@@ -1,0 +1,82 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight PWA</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css"> 
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+
+</head>
+<body onload="myFunction()">
+
+  <header class="header">
+    <div style="color:blue;margin-left:30px;">
+      <h1>Progressive Web Application
+      </h1>
+    </div>
+  </header>
+  
+  <div class="row">
+  <div class="col-sm-5">
+  <h2 style="color:coral;margin-left:30px;">Flight Arrivals</h2>      
+  <table  align="center" class="table">
+    <tbody>
+      <tr>
+      <td id='One'></td>
+      <td id='OneTime'></td>
+      <td id='OneStatus'></td>
+      </tr>
+      <tr>
+      <td  id='Two'></td>
+      <td id='TwoTime'></td>
+      <td id='TwoStatus'></td>
+      </tr>
+      <tr>
+      <td id='Three'></td>
+      <td id='ThreeTime'></td>
+      <td id='ThreeStatus'></td>
+      </tr>
+      <tr>
+      <td id='Four'></td>
+      <td id='FourTime'></td>
+      <td id='FourStatus'></td>
+      </tr>
+      <tr>
+      <td id='Five'></td>
+      <td id='FiveTime'></td>
+      <td id='FiveStatus'></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </div>
+  <script src="scripts/app.js" async></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jquery-3.2.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
